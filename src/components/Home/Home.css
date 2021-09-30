@@ -1,0 +1,12 @@
+.background {
+   
+    background-image: url(../../food.jpg);
+     background-repeat: no-repeat;
+     height: 550px;
+     width: 100%;
+     background-position: center;
+     background-size: cover;
+     
+}
+
+

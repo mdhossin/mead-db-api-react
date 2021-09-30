@@ -1,0 +1,23 @@
+.card{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #fcfcfc;
+    transition: .3s all ease;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    -ms-transition: .3s all ease;
+    -o-transition: .3s all ease;
+}
+.img{
+    height: 230px;
+}
+.card:hover{
+    transform: scale(.98);
+    -webkit-transform: scale(.98);
+    -moz-transform: scale(.98);
+    -ms-transform: scale(.98);
+    -o-transform: scale(.98);
+}

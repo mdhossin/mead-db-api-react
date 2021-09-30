@@ -1,0 +1,23 @@
+.singleFood{
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card-size{
+    width: 46rem;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+    .card-size{
+       
+        width: 25rem;
+        margin-top: 20px;
+        border: none;
+    }
+}

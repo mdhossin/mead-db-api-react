@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Contact from "./components/Contact/Contact";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Meals from "./components/Meals/Meals";
+import NotFound from "./components/NotFound/NotFound";
+import SingleFood from "./components/SingleFood/SingleFood";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/about">
+          <AboutUs />
+        </Route>
+        <Route exact path="/meals">
+          <Meals />
+        </Route>
+        <Route exact path="/meals/:id">
+          <SingleFood></SingleFood>
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
